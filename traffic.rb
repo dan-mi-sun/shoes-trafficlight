@@ -35,20 +35,41 @@ class Bulb < Shoes::Shape
     end
   end
   
-  def bulb_colour
-    "#999999"
-  end  
 end
 
 class GoBulb < Bulb
 
+  def bulb_colour
+    if switched_on
+      TL::Go
+    else
+      TL::Grey
+    end
+  end
+
 end
 
 class WaitBulb < Bulb
+  
+  def bulb_colour
+    if switched_on
+      TL::Wait
+    else
+      TL::Grey
+    end
+  end
 
 end
 
 class StopBulb < Bulb
+
+  def bulb_colour
+    if switched_on
+      TL::Stop
+    else
+      TL::Grey
+    end
+  end
 
 end
 
