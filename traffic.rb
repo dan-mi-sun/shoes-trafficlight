@@ -78,9 +78,9 @@ Shoes.app :title => "My Amazing Traffic Light", :width => 150, :height => 250 do
   stroke black    
   
   @traffic_light = TrafficLight.new
-  @top = GoBulb.new self, 50, 40, true     
-  @middle = WaitBulb.new self, 50, 100, true
-  @bottom = StopBulb.new self, 50, 160, true
+  @top = GoBulb.new self, 50, 40, false     
+  @middle = WaitBulb.new self, 50, 100, false
+  @bottom = StopBulb.new self, 50, 160, false
   
   click do
     
