@@ -40,6 +40,18 @@ class Bulb < Shoes::Shape
   end  
 end
 
+class GoBulb < Bulb
+
+end
+
+class WaitBulb < Bulb
+
+end
+
+class StopBulb < Bulb
+
+end
+
 Shoes.app :title => "My Amazing Traffic Light", :width => 150, :height => 250 do
   background "000", :curve => 10, :margin => 25  
   stroke black    
