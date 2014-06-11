@@ -1,3 +1,5 @@
+require 'tl'
+
 class TrafficLight  
   include Enumerable
 
